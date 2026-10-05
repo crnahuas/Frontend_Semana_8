@@ -42,7 +42,6 @@ npm run preview
 
 ```text
 Frontend_Semana8/
-├── .github/workflows/deploy.yml
 ├── capturas/
 ├── public/
 │   ├── assets/img/
@@ -80,11 +79,9 @@ La carpeta `capturas/` contiene cuatro imágenes de evidencia para la entrega:
 
 ## Publicación en GitHub Pages
 
-El workflow `.github/workflows/deploy.yml` compila y publica automáticamente la aplicación al enviar cambios a `main` o `master`.
+El repositorio está configurado para publicar desde la raíz de la rama `gh_pages`.
 
-1. Crear un repositorio público para la Semana 8 y subir el contenido de esta carpeta.
-2. En GitHub, abrir **Settings → Pages**.
-3. Seleccionar **GitHub Actions** como fuente de publicación.
-4. Enviar cambios a la rama principal o ejecutar manualmente el workflow **Publicar en GitHub Pages**.
-
-Como alternativa, `npm run deploy` publica la carpeta `dist` mediante la rama `gh-pages`.
+1. Guardar y enviar los cambios del código fuente a la rama `main`.
+2. Ejecutar `npm run deploy` desde esta carpeta.
+3. El comando compila la aplicación y publica el contenido de `dist` en `gh_pages`.
+4. Revisar la aplicación en `https://crnahuas.github.io/Frontend_Semana_8/`.
